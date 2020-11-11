@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/syle.css">
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td colspan="4">
+                <input style="text-align: right; width: 98%" type="text" id="d" disabled>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" name="one" value="1" onclick="d.value += 1"></td>
+            <td><input type="button" name="two" value="2" onclick="d.value += 2"></td>
+            <td><input type="button" name="three" value="3" onclick="d.value+= 3"></td>
+            <td><input type="button" class="spec" name="plus" value="+" onclick="d.value += '+'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="four" value="4" onclick="d.value += 4"></td>
+            <td><input type="button" name="five" value="5" onclick="d.value += 5"></td>
+            <td><input type="button" name="six" value="6" onclick="d.value += 6"></td>
+            <td><input type="button" class="spec" name="minus" value="-" onclick="d.value += '-'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" name="seven" value="7" onclick="d.value+= 7"></td>
+            <td><input type="button" name="eight" value="8" onclick="d.value += 8"></td>
+            <td><input type="button" name="nine" value="9" onclick="d.value += 9"></td>
+            <td><input type="button" class="spec" name="times" value="x" onclick="d.value += '*'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="spec" id="clear" name="clear" value="C" onclick="d.value = ''"></td>
+            <td><input type="button" class="spec" name="zero" value="0" onclick="d.value += '0'"></td>
+            <td><input type="button" class="spec" name="doit" value="=" onclick="d.value= eval(d.value)"></td>
+            <td><input type="button" class="spec" name="div" value="/" onclick="d.value += '/'"></td>
+        </tr>
+    </table>
+</form>
+
+</form>
+</body>
+</html>
